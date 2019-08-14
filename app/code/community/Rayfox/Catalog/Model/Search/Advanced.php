@@ -11,7 +11,7 @@
  *
  * @version 0.2.5
  */
-class Rayfox_Catalog_Model_Search_Layer extends Mage_CatalogSearch_Model_Layer
+class Rayfox_Catalog_Model_Search_Advanced extends Mage_CatalogSearch_Model_Advanced
 {
     public function prepareProductCollection($collection)
     {
@@ -22,9 +22,8 @@ class Rayfox_Catalog_Model_Search_Layer extends Mage_CatalogSearch_Model_Layer
         $websiteId = Mage::app()->getStore()->getWebsiteId();
         if (Mage::helper('catalog')->isModuleEnabled('Mage_CatalogInventory')) {
             $stockStatusFieldExisted = Mage::helper('rayfox_catalog')->checkFieldExisted($collection->getSelect(), 'stock_status');
-
             if(!$stockStatusFieldExisted) {
-                 $collection->joinTable(
+                $collection->joinTable(
                     array('cisi' => 'cataloginventory/stock_status'),
                     'product_id=entity_id',
                     array('stock_status'),
@@ -32,7 +31,6 @@ class Rayfox_Catalog_Model_Search_Layer extends Mage_CatalogSearch_Model_Layer
                     'left'
                 );
             }
-           
         }
         $collection->getSelect()->order('stock_status desc');
         return $this;

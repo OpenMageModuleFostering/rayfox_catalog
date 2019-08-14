@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>Rayfox_Catalog</name>
-    <version>0.2.1</version>
+    <version>0.2.5</version>
     <stability>stable</stability>
     <license>OSL v3.0</license>
     <channel>community</channel>
@@ -18,11 +18,12 @@
  &lt;li&gt; Configurable settings, it depends on &amp;quot;show out of stock product&amp;quot;, it will be hidden if not allowed display out of stock products. &lt;/li&gt;&#xD;
  &lt;li&gt;Support both configurable and simple products now.&lt;/li&gt;&#xD;
 &lt;/ul&gt;</description>
-    <notes>Add support to search results.</notes>
-    <authors><author><name>Rayfox</name><user>rayfox</user><email>rayzhang@email.com</email></author></authors>
-    <date>2014-10-15</date>
-    <time>06:49:30</time>
-    <contents><target name="magecommunity"><dir name="Rayfox"><dir name="Catalog"><dir name="Helper"><file name="Data.php" hash="1bf6dd400e723b13c790b4a08bfd7f4d"/></dir><dir name="Model"><file name="Layer.php" hash="f7ae75d4cbe430501bc2fa3188f06850"/><dir name="Search"><file name="Layer.php" hash="0944ffeab2934918b193cee2d0f47431"/></dir><file name=".DS_Store" hash="64ef2c9424e6b3669c041438abea4fdf"/></dir><dir name="etc"><file name="config.xml" hash="d1bb7daa665cc265b31c572cfec8bf8a"/><file name="system.xml" hash="63ef7de3d3bb5b82eb6cdd5be28d5f7d"/></dir><file name=".DS_Store" hash="ce6e6b7b4d09237a2e3c9362b3b30466"/></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Rayfox_Catalog.xml" hash="45279cdc4ceec7308127aae41ec7badd"/></dir></target></contents>
+    <notes>1. Fixed potential conflicts with other module.&#xD;
+2. Supported php 7.x</notes>
+    <authors><author><name>Ray</name><user>cgzhang</user><email>cgzhang@gmail.com</email></author></authors>
+    <date>2016-11-18</date>
+    <time>06:36:02</time>
+    <contents><target name="magecommunity"><dir name="Rayfox"><dir name="Catalog"><dir name="Helper"><file name="Data.php" hash="c1048df6ce1472a3455e033ace61c149"/></dir><dir name="Model"><file name="Layer.php" hash="6a070a1ca34d9675f0a35ab1036010bc"/><dir name="Search"><file name="Advanced.php" hash="064994639a76217c89a4e5f2030da030"/><file name="Layer.php" hash="47342d24e3f9c367018bffc95b8e4ba2"/></dir><file name=".DS_Store" hash="d6ea1718d9ba907d809e80993b2e7097"/></dir><dir name="etc"><file name="config.xml" hash="bed52ac8f8cc3d15cb721b667f9497cf"/><file name="system.xml" hash="f20baf7c4a446856f083f404a4a3d185"/></dir><file name=".DS_Store" hash="77abca31ed0bb69e5f9d89a3c92819d9"/></dir><file name=".DS_Store" hash="20e61045f5561df8f8bf3c313b1461a1"/></dir></target><target name="mageetc"><dir name="modules"><file name="Rayfox_Catalog.xml" hash="45279cdc4ceec7308127aae41ec7badd"/></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+    <dependencies><required><php><min>5.0.0</min><max>7.1.0</max></php></required></dependencies>
 </package>
