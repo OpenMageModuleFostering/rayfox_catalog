@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package>
+    <name>Rayfox_Catalog</name>
+    <version>0.2.0</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension will move all out of stock products to the bottom of the category product list page.</summary>
+    <description>  If you want to show out of stock products but don't want them to on the top of your product list page, this extension can help you.&#xD;
+  You only need to switch it on on Magento configuration and it will  move all out of stock products to the bottom of the product list page.&#xD;
+  The configuration depends on "show out of stock product", it will be hidden if not allowed display out of stock products.&#xD;
+&#xD;
+* Features:&#xD;
+ * 1. Always show out of stock products on the bottom of the category page.&#xD;
+ * 2. Easy setup, just turn on from Magento backend, and it works!&#xD;
+ * 2. Configurable settings, it depends on "show out of stock product", it will be hidden if not allowed display out of stock products.&#xD;
+ * 3. Support both configurable and simple products now.</description>
+    <notes>Bug fix </notes>
+    <authors><author><name>Rayfox</name><user>cgzhang</user><email>rayzhang@email.com</email></author></authors>
+    <date>2014-05-23</date>
+    <time>07:24:48</time>
+    <contents><target name="magecommunity"><dir name="Rayfox"><dir name="Catalog"><dir name="Helper"><file name="Data.php" hash="a699208745efe63c665f6e5003f067d3"/></dir><dir name="Model"><file name="Layer.php" hash="2b189c52b61a8670e3af22c927849747"/><file name=".DS_Store" hash="64ef2c9424e6b3669c041438abea4fdf"/></dir><dir name="etc"><file name="config.xml" hash="85df6c44a10e295f65f3bca681f7654a"/><file name="system.xml" hash="d11f439589df04a71e8eb8ef047978b1"/></dir><file name=".DS_Store" hash="ce6e6b7b4d09237a2e3c9362b3b30466"/></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Rayfox_Catalog.xml" hash="45279cdc4ceec7308127aae41ec7badd"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
