@@ -28,7 +28,7 @@
 <config>
 	<modules>
 		<Rayfox_Catalog>
-			<version>0.2.0</version>
+			<version>0.2.1</version>
 		</Rayfox_Catalog>
 	</modules>
 	<global>
@@ -38,6 +38,11 @@
 					<layer>Rayfox_Catalog_Model_Layer</layer>
 				</rewrite>
 			</catalog>
+			<catalogsearch>
+				<rewrite>
+					<layer>Rayfox_Catalog_Model_Search_Layer</layer>
+				</rewrite>
+			</catalogsearch>
 		</models>
 		<helpers>
 			<rayfox_catalog>

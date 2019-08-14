@@ -11,12 +11,12 @@
  *
  * @version 0.2.1
  */
-class Rayfox_Catalog_Model_Layer extends Mage_Catalog_Model_Layer
+class Rayfox_Catalog_Model_Search_Layer extends Mage_CatalogSearch_Model_Layer
 {
 	public function prepareProductCollection($collection)
 	{
 		parent::prepareProductCollection($collection);
-		if(!Mage::helper('rayfox_catalog')->isSortOutOfStockProductsAtBottomEnabled()){
+		if(!Mage::helper('rayfox_catalog')->isEnabledForSearchResults()){
 			return $this;
 		}
         $websiteId = Mage::app()->getStore()->getWebsiteId();
