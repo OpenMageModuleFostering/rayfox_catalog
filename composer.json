@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Rayfox_Catalog",
+    "name": "OpenMageModuleFostering\/Rayfox_Catalog",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "This extension will move all out of stock products to the bottom of the category product list page.",
     "authors": [
-    {
-        "name": "Ray",
-        "email": "cgzhang@gmail.com"
-    }
-],
+        {
+            "name": "Ray",
+            "email": "cgzhang@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
